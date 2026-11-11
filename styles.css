@@ -1,0 +1,50 @@
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 70vh;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  .slides img,
+  .slides video {
+    display: none;
+    width: 100%;
+    height: auto;
+    /* max-height: 90vh; */
+    /* margin: auto; */
+
+  }
+
+  /* Video ka size bilkul slide (PNG 1536x600) jitna */
+  .slides video {
+    aspect-ratio: 1536 / 600;
+    object-fit: contain;
+    background: #000;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+
+  
